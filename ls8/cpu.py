@@ -127,8 +127,11 @@ class CPU:
             elif ir == hlt:
                 running = False
                 self.pc += 1
+            # if instructions is empty, close the cpu
+            elif ir == 0:
+                sys.exit(1)
             # if unrecognized command
             else:
-                print(f'Unknown instruction register: {ir}')
+                print(f'unsupported instruction register: {ir}')
                 # system crash
                 sys.exit(1)
