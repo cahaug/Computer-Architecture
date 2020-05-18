@@ -28,7 +28,7 @@ class CPU:
         self.reg = [0] * 8
         self.pc = 0
         self.SP = 7
-        self.reg[self.SP] = len(self.ram) - 1
+        self.reg[self.SP] = len(self.ram) - 12 #initiate stack at F4 per readme
         self.running = False
         self.branchtable = {}
         self.branchtable[HLT] = self.handle_halt
