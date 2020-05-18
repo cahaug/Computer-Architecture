@@ -60,6 +60,10 @@ but you'll have to implement those three above instructions first!
 ## Step 0: IMPORTANT: inventory what is here!
 
 * Make a list of files here.
+  - cpu.py : this is the CPU class, it loads programs with methods and runs operations
+  - ls8.py : initializes our CPU class instance and runs it
+
+
 * Write a short 3-10-word description of what each file does.
 * Note what has been implemented, and what hasn't.
 * Read this whole file.
